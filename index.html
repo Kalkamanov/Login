@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Поле с паролем</title>
+  <meta name='viewport' content='widt=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="styles.css">
+ </head>
+
+
+ <body>
+  <div class="container">
+    <section class="first">
+      <video src="2.mp4" muted autoplay loop class="first_video"></video>
+  </section>
+    <div class="login">
+       <img src="21.jpg" class="user">
+       <h1>Қош келдіңіз</h1>
+        <label for="username">Логин</label>
+        <input type="text" id="username" placeholder="Логинді енгізіңіз">   
+        <label for="form-pass">Құпия сөз</label>
+        <input type="password" id="form-pass" class="form-pass" placeholder="Құпия сөзді енгізіңіз">
+        <span class="pass-icon" id="pass-icon"><img src="eye-icon-sign-symbol-design-free-png.webp" style="width: 20px;height: 20px;"></span>
+        <input type="submit" value="Кіру" id="btn-auth">
+   </div>
+
+  </div>
+
+<script>
+
+//document.location.href = 'C:/Users/Admin/Desktop/Nurix/awda.html'
+
+const iconPass = document.getElementById('pass-icon');
+
+// iconPass.addEventListener('click',() =>{
+//   if (inputPass.getAttribute('type') === "password") {
+//      inputPass.setAttribute('type','text');     
+// } else {
+//   inputPass.setAttribute('type','password');
+// }
+// });
+
+// windows.open('файл') = открыть страницу в новой вкладке
+// document.location.href = 'файл' = открыть страницу
+
+document.getElementById("btn-auth").addEventListener('click', (e) => {
+  if(document.getElementById('form-pass').value === "nurik") {
+    window.open('awda.html')
+  }
+})
+</script>
+
+ </body>
+</html>
+  
+
+
+
